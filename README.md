@@ -12,7 +12,7 @@ Run the main file (**_ga.py_**) by running below command:
 ```sh
 $ python3 ga.py
 ```
-Details about each generation while generating the best fittest score will be printed to standard output.
+Details about each generation while generating the best fitness score will be printed to standard output.
 
 In the algorithm, there are multiple parameters that a user can change to advance as needed:
 > - **NUM_INDIVIDUALS**: A number of individuals = population (default: 5)
