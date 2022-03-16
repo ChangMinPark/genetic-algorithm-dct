@@ -21,4 +21,4 @@ In the algorithm, there are multiple parameters that a user can change to advanc
 > - **ENABLE_TWO_POINT**: Whether to enable two point technique (default: True)
 > - **ADV_1ST_POP**: Whether to enable advanced population initialization (Default: True)
 
-To understand the parameters, please read general genetic algorithm and the literature mentioned. 
+To understand the parameters, please refer to genetic algorithm and the literature mentioned. 
