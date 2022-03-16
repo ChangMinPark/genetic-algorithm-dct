@@ -7,7 +7,7 @@ Traditional approaches embed data to the least significant bits (LSB) of DCT coe
 
 In a case that data embedding shouldn't change at all such as hashes, a user may set target fitness score to max. Howerver, a performance in that case is not really great with this algorithm. It requires more number of generations and sometimes runs infinite.
 
-# Test
+## Test
 Run the main file (**_ga.py_**) by running below command:
 ```sh
 $ python3 ga.py
