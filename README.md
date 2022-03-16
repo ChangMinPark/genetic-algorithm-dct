@@ -1,11 +1,11 @@
 # Genetic Algorithm DCT
-Watermarking data in DCT coefficient has a significant challenge that the extracted data is different with the original embedded data (reference: ["Digital Watermarking and Steganography: Fundamentals and Techniques", section 7, Frank Y. Shih](https://researchwith.njit.edu/en/publications/digital-watermarking-and-steganography-fundamentals-and-technique-2)). This is caused by IDCT and DCT that are applied after embedding:
+Watermarking data in DCT coefficient has a significant challenge that the extracted data is different from the original data embedded (reference: ["Digital Watermarking and Steganography: Fundamentals and Techniques", section 7, Frank Y. Shih](https://researchwith.njit.edu/en/publications/digital-watermarking-and-steganography-fundamentals-and-technique-2)). This is caused by IDCT and DCT that are applied after embedding:
 - **IDCT**: converts DCT coefficient to image block
 - **DCT**: converts image block to DCT coefficient before extraction
 
-Traditional approaches embed data to the least significant bits (LSB) of DCT coefficient and apply rounding. This little change directly in DCT coefficient causes inconsistency of data after IDCT and DCT. Aforementioned literature solves the problem using genetic algorithm, and the algorithm in this repository has been implemented based on that. 
+Traditional approaches embed data to the least significant bits (LSB) of DCT coefficient and round real numbers after IDCT. This small change directly in DCT coefficient causes inconsistency of data after IDCT and DCT. The aforementioned literature solves the problem using a genetic algorithm, and the algorithm in this repository has been implemented based on that.
 
-In a case that data embedding shouldn't change at all such as hashes, a user may set target fitness score to max. Howerver, a performance in that case is not really great with this algorithm. It requires more number of generations and sometimes runs infinite.
+In a case that data embedding shouldn't change at all such as hashes, a user may set the target fitness score to max. However, performance, in that case, is not great with this algorithm. It requires more generations and sometimes runs infinitely.
 
 ## Test
 Run the main file (**_ga.py_**) by running below command:
