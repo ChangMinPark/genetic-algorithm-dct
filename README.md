@@ -5,7 +5,26 @@ Watermarking data in DCT coefficient has a significant challenge that the extrac
 
 Traditional approaches embed data to the least significant bits (LSB) of DCT coefficient and round real numbers after IDCT. This small change directly in DCT coefficient causes inconsistency of data after IDCT and DCT. The aforementioned literature solves the problem using a genetic algorithm, and the algorithm in this repository has been implemented based on that.
 
-In a case that data embedding shouldn't change at all such as hashes, a user may set the target fitness score to max. However, performance, in that case, is not great with this algorithm. It requires more generations and sometimes runs infinitely.
+In a case that data embedding shouldn't change at all such as hashes, a user may set the target fitness score to max. However, performance, in that case, is not great with this algorithm. It requires more generations and sometimes runs infinitely. Check the small performance evaluation below.
+
+### Performance Evaluation
+Here's details about the performance evaluation for our algorithm.
+- Image block: 8x8
+- Embedded message: 36 bits
+- Target fitness score: 100% (36 bits)
+- Number of Runs: 1000
+
+  <img src="https://github.com/ChangMinPark/genetic-algorithm-dct/blob/main/result.png" width="800">
+
+  Above result shows that 47% of the runs require less than 200 generations, and 35% of the runs exceeds 1000 generations. This is significant because latency increases as the number of runs required increases. 1000 generation takes 4 seconds in average. Even the 0 to 50 generations takes 0.1 second in average, and this is still critical to watermark a whole image. 
+  
+  > e.g., 1280x800 image has 16,000 image blocks (8x8). 
+  > 
+  > 16,000 * 0.1 sec == 1600 sec. == 26.6 min. 
+  
+  
+
+<br/>
 
 ## Test
 Run the main file (**_ga.py_**) by running below command:
