@@ -16,7 +16,7 @@ Here's details about the performance evaluation for our algorithm.
 
   <img src="https://github.com/ChangMinPark/genetic-algorithm-dct/blob/main/result.png" width="800">
 
-  Above result shows that 47% of the runs require less than 200 generations, and 35% of the runs exceeds 1000 generations. This is significant because latency increases as the number of runs required increases, and 1000 generation takes 4 seconds in average. Even the 0 to 50 generations takes 0.1 second in average, and this is still critical to watermark a whole image. 
+  Above result shows that 47% of the runs require less than 200 generations, and 35% of the runs exceeds 1000 generations. This is significant because latency increases as the number of runs required increases, and 1000 generation takes 4 seconds in average. Even the 0 to 50 generations takes 0.1 second in average which is still critical to watermark a whole image. 
   
   > e.g., 1280x800 image has 16,000 image blocks (8x8). 
   > 
