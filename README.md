@@ -8,7 +8,7 @@ Traditional approaches embed data to the least significant bits (LSB) of DCT coe
 In a case that data embedding shouldn't change at all such as hashes, a user may set the target fitness score to max. However, performance, in that case, is not great with this algorithm. It requires more generations and sometimes runs infinitely. Check the small performance evaluation below.
 
 ### Performance Evaluation
-Here's details about the performance evaluation for our algorithm.
+Here are details about the performance evaluation for our algorithm.
 - Image block: 8x8
 - Embedded message: 36 bits
 - Target fitness score: 100% (36 bits)
