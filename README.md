@@ -22,7 +22,13 @@ Here's details about the performance evaluation for our algorithm.
   > 
   > 16,000 * 0.1 sec == 1600 sec. == 26.6 min. 
   
-  **_However, if a user targets 80% or 90% fitness score, the performance can be imporved significantly._**
+  **_However, if a user targets 80% or 90% fitness score, the performance can be imporved significantly._** 
+  
+  We changed the target fitness score to 90% (32.4 bits) and could get all 1000 runs with less than 50 generations. Also, the latency for each run takes 0.015 second.
+
+  > e.g., 1280x800 image has 16,000 image blocks (8x8). 
+  > 
+  > 16,000 * 0.015 sec == 240 sec. == 4 min. 
   
 
 <br/>
