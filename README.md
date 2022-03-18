@@ -22,6 +22,7 @@ Here's details about the performance evaluation for our algorithm.
   > 
   > 16,000 * 0.1 sec == 1600 sec. == 26.6 min. 
   
+  **_However, if a user targets 80% or 90% fitness score, the performance can be imporved significantly._**
   
 
 <br/>
